@@ -6,44 +6,26 @@
 
 <script type="text/javascript" src="js/home.js"></script>
 
-
+<!-- 
 <script type="text/javascript" src="js/checklist.js"></script>
-
+ -->
 <script type="text/javascript" src="js/terms.js"></script>
 
-{% if page.path == 'qnaire.html' %}
-    <script type="text/javascript" src="js/qnaire.js"></script>
-{% endif %}
+
+<script type="text/javascript" src="js/qnaire.js"></script>
+
 
 <script>
     $(document).foundation({
         accordion: {
     // specify the class used for active (or open) accordion panels
-    active_class: 'active-accordion',
+    active_class: 'active-accordion'
     // allow multiple accordion panels to be active at the same time
-    multi_expand: false,
+    // multi_expand: false,
     // allow accordion panels to be closed by clicking on their headers
     // setting to false only closes accordion panels when another is opened
-    toggleable: true
+    // toggleable: true
   }
-  // ,
-  // dropdown: {
-  //   opened: function(){
-  //       // $(this).addClass("open");
-  //       var content = $(this);
-  //       content.slideDown("50",function(){
-  //           content.hide();
-  //       });
-
-  //       content.hide(1000).show(1000);
-
-  //   },
-  //   closed: function(){
-  //       // $(this).addClass("open");
-  //       $(this).slideUp(100);
-
-  //   }
-  // }
 
 });
 </script>
@@ -57,7 +39,6 @@ $(document).ready(function(){
         //$("dd.active").find(".content").slideToggle("slow");
         $(this).find(".content").slideToggle("300");
     });
-
 
 
     //   $("a.dropdown").on("click", function (event, dropdown) {
